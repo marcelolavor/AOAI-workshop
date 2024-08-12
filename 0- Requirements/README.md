@@ -26,6 +26,14 @@ For this workshop you MUST have the following:
     - Install [Python 3.12.2](https://www.python.org/downloads/release/python-3122/)
 - Linux
     - It is usually pre-installed. Check version with `python3 --version`.
+    - If not, install with:
+        - `sudo add-apt-repository ppa:deadsnakes/ppa`
+        - `sudo apt-get install python3.12`
+        - `sudo apt-get install python3.12-venv`
+        - `sudo apt-get install python3.12-dev`
+        - `sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1`
+        - `sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 2`
+        - `sudo update-alternatives --config python3`
 - Mac
     - `brew install python3`
 
@@ -38,7 +46,7 @@ For this workshop you MUST have the following:
 - Creation of virtualenv (in the cloned Azure/AOAI-workshop directory):
     - Windows:
 
-        `python -m virtualenv venv`
+        `python3 -m virtualenv venv`
     - Mac / Linux:
 
         `virtualenv -p python3 venv`
@@ -56,6 +64,11 @@ For this workshop you MUST have the following:
     - Windows / Mac / Linux:
 
         `pip3 install -r requirements.txt`
+
+### In case of failure (ex: "Error: pg_config executable not found.")
+- if error, run the following command in the terminal:
+    - Linux:
+        `sudo apt-get install libpq-dev`
 
 ## Create the necessary Azure resources
 - Insert your subscription ID in the file [createAll.ps1](./scripts/createAll.ps1) and save it. 
