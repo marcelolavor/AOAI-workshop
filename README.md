@@ -25,3 +25,14 @@ This is a forked version from the OpenAI workshop created by: [Denise Schlesinge
 
 ## Requirements
 * In order to participate in the workshop you must follow the instructions in the ["0- Requirements folder"](./0-%20Requirements/README.md)
+
+## Running tests
+
+1. Install the dependencies, preferably in a virtual environment:
+   ```bash
+   pip install -r requirements.txt -r requirements-dev.txt
+   ```
+2. Execute the test suite:
+   ```bash
+   pytest -q
+   ```
