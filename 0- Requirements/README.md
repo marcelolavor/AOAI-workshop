@@ -3,7 +3,7 @@ For this workshop you MUST have the following:
 # Requirements
 - Visual Studio Code
 - Python (tested with 3.10, 3.12)
-- Pyhton virtual environment tool (venv)
+- Python virtual environment tool (venv)
 - An Azure account 
 - Azure subscription onboarded into Azure OpenAI
 - Necessary permissions to deploy resources in the subscription
